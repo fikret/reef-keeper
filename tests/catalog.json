@@ -1,0 +1,200 @@
+{
+ "17831": {
+  "name": "Yellowtail Blue Damselfish",
+  "slug": "yellowtail-blue-damselfish-chrysiptera-parasema",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "17515": {
+  "name": "Lyretail Anthias",
+  "slug": "lyretail-anthias-pseudanthias-squamipinnis",
+  "cat": "fish",
+  "care": "difficult"
+ },
+ "17410": {
+  "name": "Yellow Tang",
+  "slug": "yellow-tang-zebrasoma-flavescens",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "16458": {
+  "name": "Ocellaris Clownfish",
+  "slug": "ocellaris-clownfish-amphiprion-ocellaris",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "16181": {
+  "name": "Green Chromis",
+  "slug": "green-chromis-chromis-viridis",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "15943": {
+  "name": "Neon Goby",
+  "slug": "neon-goby-elacatinus-oceanops",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "15503": {
+  "name": "Mushroom Coral",
+  "slug": "mushroom-coral-discosoma-sp",
+  "cat": "coral",
+  "care": "easy"
+ },
+ "15341": {
+  "name": "Hammer Coral",
+  "slug": "hammer-coral-fimbriaphyllia-ancora",
+  "cat": "coral",
+  "care": "moderate"
+ },
+ "14865": {
+  "name": "Neon Pineapple Tree Coral",
+  "slug": "neon-pineapple-tree-coral-capnella-sp",
+  "cat": "coral",
+  "care": "easy"
+ },
+ "14103": {
+  "name": "Citron Goby",
+  "slug": "citron-goby-gobiodon-citrinus",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "13331": {
+  "name": "Yellow Line Goby",
+  "slug": "yellow-line-goby-elacatinus-figaro",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "11366": {
+  "name": "Electric Blue Hermit Crab",
+  "slug": "electric-blue-hermit-crab-calcinus-elegans",
+  "cat": "invert",
+  "care": "easy"
+ },
+ "9172": {
+  "name": "Red Head Goby",
+  "slug": "red-head-goby-elacatinus-puncticulatus",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "9040": {
+  "name": "Tangaroa Goby",
+  "slug": "tangaroa-goby-ctenogobiops-tangaroai",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "8651": {
+  "name": "Yellow Cardinalfish",
+  "slug": "yellow-cardinalfish-ostorhinchus-luteus",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "8130": {
+  "name": "Candy Basslet",
+  "slug": "deepwater-candy-basslet-liopropoma-carmabi",
+  "cat": "fish",
+  "care": "expert-only"
+ },
+ "7882": {
+  "name": "Sharknose Goby",
+  "slug": "sharknose-goby-elacatinus-evelynae",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "7775": {
+  "name": "Panamic Barnacle Blenny",
+  "slug": "panamic-barnacle-blenny",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "7679": {
+  "name": "Black Barred Convict Goby",
+  "slug": "black-barred-convict-goby-priolepis-nocturna",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "7499": {
+  "name": "Broadstripe Goby",
+  "slug": "broadstripe-goby-elacatinus-prochilos",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "7251": {
+  "name": "Allen\u2019s Damselfish",
+  "slug": "allens-damselfish-pomacentrus-alleni",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "6944": {
+  "name": "Speckled Damsel",
+  "slug": "speckled-damsel-pomacentrus-bankanensis",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "6729": {
+  "name": "Pink-Streaked Wrasse",
+  "slug": "pink-streaked-wrasse",
+  "cat": "fish",
+  "care": "difficult"
+ },
+ "6532": {
+  "name": "Tail Spot Blenny",
+  "slug": "tail-spot-blenny-ecsenius-stigmatura",
+  "cat": "fish",
+  "care": "easy"
+ },
+ "6308": {
+  "name": "Ring-Eyed Dottyback",
+  "slug": "ring-eyed-dottyback-pseudoplesiops-typus",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "6157": {
+  "name": "Yellow Priolepis Goby",
+  "slug": "yellow-priolepis-goby",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "6036": {
+  "name": "Starry Goby",
+  "slug": "starry-goby-asterropteryx-semipunctatus",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "5973": {
+  "name": "Link\u2019s Goby",
+  "slug": "links-goby-amblygobius-linki",
+  "cat": "fish",
+  "care": "moderate"
+ },
+ "5862": {
+  "name": "Mandarin Dragonet",
+  "slug": "mandarin-dragonet-synchiropus-splendidus",
+  "cat": "fish",
+  "care": "difficult"
+ },
+ "5728": {
+  "name": "Turban Snail",
+  "slug": "turban-snail-tectus-fenestratus",
+  "cat": "invert",
+  "care": "easy"
+ },
+ "5568": {
+  "name": "Yasha Goby",
+  "slug": "yasha-goby-stonogobiops-yasha",
+  "cat": "fish",
+  "care": "difficult"
+ },
+ "5192": {
+  "name": "Rose Anthias",
+  "slug": "rose-anthias-odontanthias-katayamai",
+  "cat": "fish",
+  "care": "expert-only"
+ },
+ "4873": {
+  "name": "Azure Damselfish",
+  "slug": "azure-damselfish-chrysiptera-hemicyanea",
+  "cat": "fish",
+  "care": "easy"
+ }
+}

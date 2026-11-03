@@ -1,0 +1,538 @@
+[
+ {
+  "name": "idle-week",
+  "results": [
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "16181"
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "15943"
+   }
+  ],
+  "state": {
+   "v": 1,
+   "t": 1794096000000,
+   "tank": 0,
+   "coins": 0,
+   "xp": 0,
+   "seq": 3,
+   "fish": [],
+   "hunger": 100,
+   "quality": 0,
+   "algae": 100,
+   "pending": 6,
+   "cd": {},
+   "discovered": [
+    "16458",
+    "16181",
+    "15943"
+   ],
+   "read": [],
+   "memorial": [
+    {
+     "sid": "16458",
+     "t": 1793880000000
+    },
+    {
+     "sid": "16181",
+     "t": 1793966400000
+    },
+    {
+     "sid": "15943",
+     "t": 1794052800000
+    }
+   ],
+   "events": [
+    {
+     "type": "death",
+     "sid": "16458",
+     "t": 1793880000000
+    },
+    {
+     "type": "death",
+     "sid": "16181",
+     "t": 1793966400000
+    },
+    {
+     "type": "death",
+     "sid": "15943",
+     "t": 1794052800000
+    }
+   ],
+   "lastDeath": 1794052800000
+  }
+ },
+ {
+  "name": "daily-player",
+  "results": [
+   {
+    "ok": true,
+    "coins": 0,
+    "xp": 0,
+    "note": "overfed"
+   },
+   {
+    "ok": true,
+    "coins": 3,
+    "xp": 8,
+    "readings": {
+     "ph": 8.19,
+     "no3": 10,
+     "temp": 25.5,
+     "status": "ok"
+    }
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   },
+   {
+    "ok": true,
+    "coins": 8,
+    "xp": 15
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   },
+   {
+    "ok": true,
+    "coins": 6,
+    "xp": 0
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "4873"
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   },
+   {
+    "ok": true,
+    "coins": 8,
+    "xp": 15
+   },
+   {
+    "ok": true,
+    "coins": 3,
+    "xp": 8,
+    "readings": {
+     "ph": 8.16,
+     "no3": 12,
+     "temp": 25.5,
+     "status": "ok"
+    }
+   },
+   {
+    "ok": true,
+    "coins": 12,
+    "xp": 0
+   }
+  ],
+  "state": {
+   "v": 1,
+   "t": 1793862000000,
+   "tank": 0,
+   "coins": 80,
+   "xp": 96,
+   "seq": 2,
+   "fish": [
+    {
+     "uid": 1,
+     "sid": "16458",
+     "health": 99.1
+    },
+    {
+     "uid": 2,
+     "sid": "4873",
+     "health": 99.1
+    }
+   ],
+   "hunger": 0,
+   "quality": 82.84,
+   "algae": 68.06,
+   "pending": 0,
+   "cd": {
+    "feed": 1793862000000,
+    "test": 1793862000000,
+    "change": 1793862000000,
+    "glass": 1793685600000
+   },
+   "discovered": [
+    "16458",
+    "4873"
+   ],
+   "read": [],
+   "memorial": [],
+   "events": [],
+   "lastDeath": 0
+  }
+ },
+ {
+  "name": "emergency-save",
+  "results": [
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "16181"
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   },
+   {
+    "ok": true,
+    "coins": 8,
+    "xp": 15
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   }
+  ],
+  "state": {
+   "v": 1,
+   "t": 1794103200000,
+   "tank": 0,
+   "coins": 36,
+   "xp": 35,
+   "seq": 2,
+   "fish": [
+    {
+     "uid": 2,
+     "sid": "16181",
+     "health": 25.6
+    }
+   ],
+   "hunger": 100,
+   "quality": 11.8,
+   "algae": 55.56,
+   "pending": 6,
+   "cd": {
+    "feed": 1793923200000,
+    "change": 1793923200000,
+    "glass": 1793959200000
+   },
+   "discovered": [
+    "16458",
+    "16181"
+   ],
+   "read": [],
+   "memorial": [
+    {
+     "sid": "16458",
+     "t": 1793898000000
+    }
+   ],
+   "events": [
+    {
+     "type": "death",
+     "sid": "16458",
+     "t": 1793898000000
+    }
+   ],
+   "lastDeath": 1793898000000
+  }
+ },
+ {
+  "name": "overfeed-and-limits",
+  "results": [
+   {
+    "ok": true,
+    "coins": 0,
+    "xp": 0,
+    "note": "overfed"
+   },
+   {
+    "ok": false,
+    "error": "cooldown"
+   },
+   {
+    "ok": false,
+    "error": "tank"
+   },
+   {
+    "ok": false,
+    "error": "tank"
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "16181"
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "15943"
+   },
+   {
+    "ok": false,
+    "error": "full"
+   },
+   {
+    "ok": false,
+    "error": "member"
+   },
+   {
+    "ok": false,
+    "error": "xp"
+   },
+   {
+    "ok": true,
+    "coins": 50,
+    "xp": 20
+   },
+   {
+    "ok": false,
+    "error": "claimed"
+   }
+  ],
+  "state": {
+   "v": 1,
+   "t": 1793500200000,
+   "tank": 0,
+   "coins": 50,
+   "xp": 20,
+   "seq": 3,
+   "fish": [
+    {
+     "uid": 1,
+     "sid": "16458",
+     "health": 100
+    },
+    {
+     "uid": 2,
+     "sid": "16181",
+     "health": 100
+    },
+    {
+     "uid": 3,
+     "sid": "15943",
+     "health": 100
+    }
+   ],
+   "hunger": 5.21,
+   "quality": 89.4,
+   "algae": 3.47,
+   "pending": 1.88,
+   "cd": {
+    "feed": 1793491200000
+   },
+   "discovered": [
+    "16458",
+    "16181",
+    "15943"
+   ],
+   "read": [
+    "16458"
+   ],
+   "memorial": [],
+   "events": [],
+   "lastDeath": 0
+  }
+ },
+ {
+  "name": "upgrade-path",
+  "results": [
+   {
+    "ok": true,
+    "tank": 1
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "7499"
+   },
+   {
+    "ok": true,
+    "tank": 2
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "15503"
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "5728"
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "11366"
+   },
+   {
+    "ok": true,
+    "tank": 3
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "5862"
+   },
+   {
+    "ok": true,
+    "coins": 4,
+    "xp": 10
+   }
+  ],
+  "state": {
+   "v": 1,
+   "t": 1793851200000,
+   "tank": 3,
+   "coins": 3984,
+   "xp": 2010,
+   "seq": 6,
+   "fish": [
+    {
+     "uid": 1,
+     "sid": "16458",
+     "health": 40.6
+    },
+    {
+     "uid": 2,
+     "sid": "7499",
+     "health": 40.6
+    },
+    {
+     "uid": 3,
+     "sid": "15503",
+     "health": 87.4
+    },
+    {
+     "uid": 4,
+     "sid": "5728",
+     "health": 87.4
+    },
+    {
+     "uid": 5,
+     "sid": "11366",
+     "health": 87.4
+    },
+    {
+     "uid": 6,
+     "sid": "5862",
+     "health": 22.78
+    }
+   ],
+   "hunger": 0,
+   "quality": 20.83,
+   "algae": 97.22,
+   "pending": 36,
+   "cd": {
+    "feed": 1793851200000
+   },
+   "discovered": [
+    "16458",
+    "7499",
+    "15503",
+    "5728",
+    "11366",
+    "5862"
+   ],
+   "read": [],
+   "memorial": [],
+   "events": [],
+   "lastDeath": 0
+  }
+ },
+ {
+  "name": "long-absence",
+  "results": [
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "16181"
+   },
+   {
+    "ok": true,
+    "discovered": true,
+    "sid": "15943"
+   },
+   {
+    "ok": true,
+    "sid": "16458"
+   }
+  ],
+  "state": {
+   "v": 1,
+   "t": 1801285200000,
+   "tank": 0,
+   "coins": 0,
+   "xp": 0,
+   "seq": 4,
+   "fish": [
+    {
+     "uid": 4,
+     "sid": "16458",
+     "health": 100
+    }
+   ],
+   "hunger": 10.42,
+   "quality": 96.18,
+   "algae": 6.94,
+   "pending": 6,
+   "cd": {},
+   "discovered": [
+    "16458",
+    "16181",
+    "15943"
+   ],
+   "read": [],
+   "memorial": [
+    {
+     "sid": "16458",
+     "t": 1796472000000
+    },
+    {
+     "sid": "16181",
+     "t": 1796558400000
+    },
+    {
+     "sid": "15943",
+     "t": 1796644800000
+    }
+   ],
+   "events": [
+    {
+     "type": "death",
+     "sid": "16458",
+     "t": 1796472000000
+    },
+    {
+     "type": "death",
+     "sid": "16181",
+     "t": 1796558400000
+    },
+    {
+     "type": "death",
+     "sid": "15943",
+     "t": 1796644800000
+    }
+   ],
+   "lastDeath": 1796644800000
+  }
+ }
+]

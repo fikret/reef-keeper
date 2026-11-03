@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reef Keeper — demo</title>
+<link rel="stylesheet" href="../assets/game.css">
+<style>
+	body { margin: 0; padding: 24px 16px 60px; background: #eef3f7; font: 15px/1.5 system-ui, -apple-system, sans-serif; color: #0f2438; }
+	.page { max-width: 980px; margin: 0 auto; }
+	.page h1 { font-size: 22px; margin: 0 0 4px; }
+	.page > p { margin: 0 0 16px; color: #5b6f82; }
+	.debug { max-width: 980px; margin: 18px auto 0; padding: 12px 14px; border: 2px dashed #9fb6c8; border-radius: 14px; background: #fff; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; font-size: 14px; }
+	.debug b { margin-right: 6px; }
+	.debug button, .debug a { font: inherit; font-size: 13px; padding: 6px 10px; border-radius: 8px; border: 1px solid #c5d3de; background: #f6f9fb; cursor: pointer; color: inherit; text-decoration: none; }
+	.debug .clock { margin-left: auto; color: #5b6f82; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
+<div class="page">
+	<h1>Reef Keeper</h1>
+	<p>reefnetwork.com/reef-keeper/ sayfasının yerel demosu. Kayıtlar bu tarayıcıda tutuluyor.</p>
+	<div id="game"></div>
+</div>
+
+<div class="debug" id="debug">
+	<b>Test paneli</b>
+	<button data-h="6">+6 saat</button>
+	<button data-h="24">+1 gün</button>
+	<button data-h="72">+3 gün</button>
+	<button data-h="120">+5 gün</button>
+	<button id="member"></button>
+	<a id="lang" href="#"></a>
+	<button id="reset">Sıfırla</button>
+	<span class="clock" id="clock"></span>
+</div>
+
+<script src="../assets/engine.js"></script>
+<script src="../assets/i18n.js"></script>
+<script src="../assets/sprites.js"></script>
+<script src="../assets/stores.js"></script>
+<script src="../assets/game.js"></script>
+<script src="species.js"></script>
+<script src="demo.js"></script>
+<script>
+	(function () {
+		var D = ReefDemo;
+		var lang = D.lang();
+		window.rkGame = ReefKeeper.mount(document.getElementById('game'), {
+			store: D.store(),
+			species: RK_DEMO_SPECIES,
+			lang: lang,
+			member: D.member(),
+			urls: { join: '#join', signIn: '#sign-in' },
+			linkFor: function (sp) { return 'product.html?sid=' + sp.sid + '&lang=' + lang; }
+		});
+
+		var reload = function () { location.reload(); };
+		document.querySelectorAll('[data-h]').forEach(function (b) {
+			b.addEventListener('click', function () { D.travel(Number(b.dataset.h)); reload(); });
+		});
+		var m = document.getElementById('member');
+		m.textContent = D.member() ? 'Üye: açık' : 'Üye: kapalı (misafir)';
+		m.addEventListener('click', function () { D.setMember(!D.member()); reload(); });
+		var l = document.getElementById('lang');
+		l.textContent = lang === 'tr' ? 'English' : 'Türkçe';
+		l.href = '?lang=' + (lang === 'tr' ? 'en' : 'tr');
+		document.getElementById('reset').addEventListener('click', function () { D.reset(); reload(); });
+		var clock = document.getElementById('clock');
+		var tick = function () { clock.textContent = 'Oyun saati: ' + new Date(D.clock()).toLocaleString(); };
+		tick();
+		setInterval(tick, 1000);
+	})();
+</script>
+</body>
+</html>

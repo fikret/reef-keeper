@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ansiklopedi sayfası — demo</title>
+<style>
+	body { margin: 0; padding: 24px 16px 120px; background: #fff; font: 16px/1.7 Georgia, serif; color: #1d2733; }
+	article { max-width: 720px; margin: 0 auto; }
+	img { width: 100%; max-width: 420px; border-radius: 12px; display: block; margin: 0 auto 20px; }
+	.note { font: 14px/1.5 system-ui, sans-serif; background: #eef6fc; border-radius: 10px; padding: 10px 14px; margin-bottom: 20px; }
+	.filler { height: 14px; background: #edf1f4; border-radius: 4px; margin: 10px 0; }
+</style>
+</head>
+<body>
+<article>
+	<p class="note">Demo: bu sayfa reefnetwork.com'daki bir ansiklopedi sayfasını temsil ediyor. Canlı sitede de aynı discover.js çalışıyor. Ödül 20 saniye sonra ya da sayfanın yarısı okununca verilir. <a href="index.html">← Tanka dön</a></p>
+	<h1 id="name"></h1>
+	<p><i id="sci"></i></p>
+	<img id="img" alt="">
+	<div id="filler"></div>
+</article>
+
+<script src="../assets/engine.js"></script>
+<script src="../assets/i18n.js"></script>
+<script src="../assets/stores.js"></script>
+<script src="../assets/discover.js"></script>
+<script src="species.js"></script>
+<script src="demo.js"></script>
+<script>
+	(function () {
+		var sid = (/[?&]sid=(\d+)/.exec(location.search) || [])[1];
+		var lang = ReefDemo.lang();
+		var sp = ReefDemo.catalog()[sid];
+		if (!sp) return;
+		document.getElementById('name').textContent = sp.name;
+		document.getElementById('sci').textContent = sp.sci;
+		document.getElementById('img').src = sp.img.replace('-300x300', '');
+		var f = document.getElementById('filler');
+		for (var i = 0; i < 80; i++) {
+			var d = document.createElement('div');
+			d.className = 'filler';
+			d.style.width = (60 + (i * 37) % 40) + '%';
+			f.appendChild(d);
+		}
+		ReefDiscover.init({ sid: sid, store: ReefDemo.store(), lang: lang, gameUrl: 'index.html?lang=' + lang });
+	})();
+</script>
+</body>
+</html>
